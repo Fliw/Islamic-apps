@@ -32,16 +32,21 @@
         <button class="btn btn-warning my-2 my-sm-0" type="submit">Logout</button>
     </nav>
     <div class="container" style="background-color: #dbe6fd;margin-top: 10%;">
-        <h1 class="text-center mb-4">ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ</h1>
+        <h1 class="text-center mb-4" id="typed"></h1>
         <div class="card-deck mt-4">
-            <div class="card hvr-shutter-out-horizontal" style="border-radius:30px">
-                <div class="card-body text-center">
-                    <img src="https://www.iconpacks.net/icons/2/free-opened-book-icon-3169-thumb.png" width="100px" alt="">
-                </div>
-                <div class="card-footer text-center">
-                    <h3>Hadist</h3>
-                </div>
+
+            <div class="card" style="border-radius:30px">
+                <button class="btn btn-lg" data-toggle="modal" data-target="#hadithModal">
+                    <div class="card-body text-center">
+                        <img src="https://www.iconpacks.net/icons/2/free-opened-book-icon-3169-thumb.png" width="100px"
+                            alt="">
+                    </div>
+                    <div class="card-footer text-center">
+                        <h3>Hadist</h3>
+                    </div>
+                </button>
             </div>
+
             <div class="card " style="border-radius:30px ">
                 <div class="card-body text-center ">
                     <img src="https://image.flaticon.com/icons/png/512/616/616532.png" width="100px " alt=" ">
@@ -87,11 +92,30 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="hadithModal" tabindex="-1" role="dialog" aria-labelledby="hadithModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Pilih Judul Buku</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body hadithModalBody">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
