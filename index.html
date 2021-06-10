@@ -17,21 +17,35 @@
         }
         
         .card:hover {
-            background-color: #47597E;
-            color: white;
+            background: rgba( 255, 255, 255, 0.35);
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+            backdrop-filter: blur( 1.5px);
+            -webkit-backdrop-filter: blur( 1.5px);
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18);
+        }
+        
+        .glass {
+            background: rgba( 255, 255, 255, 0.35);
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+            backdrop-filter: blur( 1.5px);
+            -webkit-backdrop-filter: blur( 1.5px);
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18);
+            padding: 50px;
         }
     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body class="main">
-    <nav class="navbar navbar-dark sticky-top" style="background-color:#47597E">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-dark sticky-top" style="background-color: white; border-radius: 0px 0px 10px 10px;">
+        <a class="navbar-brand text-dark" href="#">
             <img src="https://3.bp.blogspot.com/-SDFe1Qua04w/XHbqWZyRDvI/AAAAAAAAIDk/9rGSpXejx-8212FJ0mnARObGEWjIJAl2gCK4BGAYYCw/s1600/icon%2Ballah%2Bakbar%2Bislam.png" width="35" height="35" class="d-inline-block align-top" alt=""> Aplikasi Islami
         </a>
         <button class="btn btn-warning my-2 my-sm-0" type="submit">Logout</button>
     </nav>
-    <div class="container" style="background-color: rgba(0, 0, 0, 0);margin-top: 10%;">
+    <div class="container glass" style="margin-top: 8%;">
         <h1 class="text-center mb-4 text-white"> ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ</h1>
         <div class="card-deck mt-4">
 
