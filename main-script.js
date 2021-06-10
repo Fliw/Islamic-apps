@@ -5,7 +5,7 @@ $('[data-target="#hadithModal"]').on('click',
             type: "get",
             success: function(response) {
                 for (var x = 0; x < 9; x++) {
-                    var button = '<button class="btn btn-lg bg-success text-white" id="btnHadith' + response.data[x].id + '">' + response.data[x].name + ' Dengan Jumlah hadist ' + response.data[x].available + '</button><br><br>';
+                    var button = '<a href="./hadith-layout/index.html?' + response.data[x].id + '|20"<button class="btn btn-lg bg-success text-white">' + response.data[x].name + ' Dengan Jumlah hadist ' + response.data[x].available + '</button></a><br><br>';
                     $(".hadithModalBody").append(button);
                 }
             },
