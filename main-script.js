@@ -19,13 +19,3 @@ $('[data-dismiss="modal"]').on('click',
         console.log("kehapus");
         $(".hadithModalBody").empty();
     });
-
-var options = {
-    strings: ['ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ', 'Hai Sahabat Mantap Mantap'],
-    loop: true,
-    showCursor: false,
-    backSpeed: 20,
-    typeSpeed: 20,
-    startDelay: 200
-};
-var typed = new Typed('#typed', options);

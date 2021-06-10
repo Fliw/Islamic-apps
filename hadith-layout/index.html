@@ -19,37 +19,64 @@
             background-color: #47597E;
             color: white;
         }
+        
+        .addReadMore.showlesscontent .SecSec,
+        .addReadMore.showlesscontent .readLess {
+            display: none;
+        }
+        
+        .addReadMore.showmorecontent .readMore {
+            display: none;
+        }
+        
+        .addReadMore .readMore,
+        .addReadMore .readLess {
+            font-weight: bold;
+            margin-left: 2px;
+            color: blue;
+            cursor: pointer;
+        }
+        
+        .addReadMoreWrapTxt.showmorecontent .SecSec,
+        .addReadMoreWrapTxt.showmorecontent .readLess {
+            display: block;
+        }
     </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body class="main">
-    <nav class="navbar navbar-dark" style="background-color:#47597E">
+    <nav class="navbar navbar-dark sticky-top" style="background-color:#47597E">
         <a class="navbar-brand" href="#">
-            <img src="https://3.bp.blogspot.com/-SDFe1Qua04w/XHbqWZyRDvI/AAAAAAAAIDk/9rGSpXejx-8212FJ0mnARObGEWjIJAl2gCK4BGAYYCw/s1600/icon%2Ballah%2Bakbar%2Bislam.png" width="35" height="35" class="d-inline-block align-top" alt=""> Aplikasi Islami Mantap
-            Mantap
+            <img src="https://3.bp.blogspot.com/-SDFe1Qua04w/XHbqWZyRDvI/AAAAAAAAIDk/9rGSpXejx-8212FJ0mnARObGEWjIJAl2gCK4BGAYYCw/s1600/icon%2Ballah%2Bakbar%2Bislam.png" width="35" height="35" class="d-inline-block align-top" alt=""> Aplikasi Islami
         </a>
         <button class="btn btn-warning my-2 my-sm-0" type="submit">Logout</button>
     </nav>
     <h1 id="loadingText" class="text-center" style="position: absolute;">Sedang Memuat Hadits.. Mohon Tunggu...</h1>
-    <div class="container" id="mainFrameHadith" style="background-color: #dbe6fd;margin-top: 10%; display: none;">
+    <div class="container" id="mainFrameHadith" style="background-color: #dbe6fd;margin-top: 5%; display: none;">
         <div class="jumbotron" style="background-color:white">
+
             <h1 class="display-4" id="hadithTitle"></h1>
             <p class="lead">Berikut Data Hadist nya.. Jangan Lupa Baca Bismillah Ngab</p>
-            <button class="btn btn-lg bg-primary text-white" id="btnPrev">Hadist Sebelumnya</button>
-            <button id="btnNext" class="btn btn-lg bg-primary text-white">Hadist Selanjutnya</button>
+            <button class="btn bg-primary text-white btnPrev">Hadist Sebelumnya</button>
+            <button class="btn btnNext bg-primary text-white">Hadist Selanjutnya</button>
             <hr class="my-4">
             <div class="list-group" id="mainContent">
             </div>
         </div>
     </div>
+    <nav class="navbar navbar-dark fixed-bottom" style="background-color:#47597E">
+        <button class="btn bg-primary text-white btnPrev">Back</button>
+        <button class="btn btnNext bg-primary text-white">Next</button>
+    </nav>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous ">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous ">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="hadith.js"></script>
 </body>
