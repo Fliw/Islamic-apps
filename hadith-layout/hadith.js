@@ -14,7 +14,7 @@ $(document).ready(function() {
             $("#mainFrameHadith").fadeIn(1000);
             $("#loadingText").fadeOut(1000);
             for (var x = 0; x < 19; x++) {
-                var content = '<h4> Hadist Nomor ' + response.data.hadiths[x].number + '</h4><a data-aos="zoom-in" data-aos-delay="200" style="background-color:#dbe6fd;box-shadow:-10px 0px 0px dodgerblue" class="rounded list-group-item list-group-item-action flex-column align-items-start"><div class="d-flex w-100 justify-content-"><h5 class="mb-1">' + response.data.hadiths[0].arab + '</h5></div><p class="mb-1 addReadMore showlesscontent">' + response.data.hadiths[x].id + '</p></a><br><br>';
+                var content = '<h4> Hadist Nomor ' + response.data.hadiths[x].number + '</h4><a data-aos="zoom-in" data-aos-delay="200" style="background-color:#dbe6fd;box-shadow:-10px 0px 0px dodgerblue" class="rounded list-group-item list-group-item-action flex-column align-items-start"><div class="d-flex w-100 justify-content-"><h5 class="mb-1">' + response.data.hadiths[x].arab + '</h5></div><p class="mb-1 addReadMore showlesscontent">' + response.data.hadiths[x].id + '</p></a><br><br>';
                 $("#mainContent").append(content);
             }
             $("#hadithTitle").html("Hadist Riwayat " + response.data.name);
