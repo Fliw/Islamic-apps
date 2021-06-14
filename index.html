@@ -7,22 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FP WEB</title>
     <link rel="stylesheet" href="./css/main.css">
+    <style>
+        html {
+            background-image: url('./img/bg.jpg');
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body class="main">
     <div style="z-index: -1; background-color: #00adb5;height: 400px;"></div>
     <div class="glass">
-        <h1 class="text-center" style="color: #222831;"> ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ</h1>
+        <h1 class="text-center" style="color: #00adb5;height: 50px;" id="typed"></h1>
         <br>
-        <div class="card-deck mt-4">
+        <div class="card-deck mt-4" data-aos="fade-up">
             <div class="card hvr-bounce-to-right" style="border-radius:30px">
-                <button class="btn btn-lg" data-toggle="modal" data-target="#hadithModal">
+                <button class="btn btn-lg " data-toggle="modal" data-target="#hadithModal">
                     <div class="card-body text-center">
                         <img src="https://www.iconpacks.net/icons/2/free-opened-book-icon-3169-thumb.png" width="100px"
                             alt="">
                     </div>
-                    <div class="card-footer text-center">
+                    <div class="text-center">
                         <h3>Hadist</h3>
                     </div>
                 </button>
@@ -33,7 +39,7 @@
                     <div class="card-body text-center ">
                         <img src="https://image.flaticon.com/icons/png/512/616/616532.png" width="100px " alt=" ">
                     </div>
-                    <div class="card-footer text-center ">
+                    <div class=" text-center ">
                         <h3>Kisah Nabi</h3>
                     </div>
                 </button>
@@ -42,18 +48,18 @@
                 <div class="card-body text-center ">
                     <img src="https://image.flaticon.com/icons/png/512/2858/2858338.png" width="100px " alt=" ">
                 </div>
-                <div class="card-footer text-center ">
+                <div class=" text-center ">
                     <h3>Doa-Doa</h3>
                 </div>
             </div>
         </div>
         <br>
-        <div class="card-deck ">
+        <div class="card-deck" data-aos="fade-down" data-aos-delay="600">
             <div class="card hvr-bounce-to-right" style="border-radius:30px ">
                 <div class="card-body text-center ">
                     <img src="https://image.flaticon.com/icons/png/512/3858/3858835.png" width="100px " alt=" ">
                 </div>
-                <div class="card-footer text-center ">
+                <div class=" text-center ">
                     <h3>Niat Shalat</h3>
                 </div>
             </div>
@@ -61,7 +67,7 @@
                 <div class="card-body text-center ">
                     <img src="https://image.flaticon.com/icons/png/512/4676/4676874.png" width="100px " alt=" ">
                 </div>
-                <div class="card-footer text-center ">
+                <div class=" text-center ">
                     <h3>Asmaul Husna</h3>
                 </div>
             </div>
@@ -69,7 +75,7 @@
                 <div class="card-body text-center ">
                     <img src="https://image.flaticon.com/icons/png/512/3858/3858896.png" width="100px " alt=" ">
                 </div>
-                <div class="card-footer text-center ">
+                <div class=" text-center ">
                     <h3>Ceramah</h3>
                 </div>
             </div>
@@ -158,12 +164,12 @@
             </div>
         </div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <script src="main-script.js"></script>
 </body>
 

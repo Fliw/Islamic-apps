@@ -1,15 +1,19 @@
-html {
-    background-image: url("img/bg.jpg");
-}
-
 .main {
     background-color: rgba(0, 0, 0, 0);
+}
+
+.card{
+    padding: 20px;
 }
 
 .card:hover {
     background: rgba(255, 255, 255, 0.35);
     box-shadow: 0 8px 32px 0 #00adb5;
     border-radius: 10px;
+}
+
+button.btn:hover{
+    color:white;
 }
 
 .hvr-bounce-to-right {
@@ -214,12 +218,12 @@ html {
 }
 
 .glass {
-    background-color: #eeeeee;
-    padding: 5%;
+    background-color: #ffffff;
+    padding: 3%;
     margin-top: -300px;
     z-index: 100;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
     border-radius: 50px;
     border: 10px double #00adb5;
 }

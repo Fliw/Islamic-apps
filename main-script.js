@@ -19,3 +19,12 @@ $('[data-dismiss="modal"]').on('click',
         console.log("kehapus");
         $(".hadithModalBody").empty();
     });
+    AOS.init();
+    var typed = new Typed('#typed', {
+        strings: ["Assalamu'alaikum..", "Hai Akhi!", "Selamat Datang di Aplikasi islami"],
+        typeSpeed: 50,
+        backSpeed: 20,
+        showCursor:false,
+        loop:true
+      });
+      
