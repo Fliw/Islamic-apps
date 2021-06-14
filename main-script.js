@@ -21,7 +21,7 @@ $('[data-dismiss="modal"]').on('click',
     });
     AOS.init();
     var typed = new Typed('#typed', {
-        strings: ["Assalamu'alaikum..", "Hai Akhi!", "Selamat Datang di Aplikasi islami"],
+        strings: ["ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ", "Hai Akhi!", "Selamat Datang di Aplikasi islami"],
         typeSpeed: 50,
         backSpeed: 20,
         showCursor:false,

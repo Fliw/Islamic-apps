@@ -11,10 +11,11 @@ $(document).ready(function() {
         url: "https://api.hadith.sutanlab.id/books/" + hadithId + "?range=" + (page - 19) + "-" + page,
         type: "get",
         success: function(response) {
+            $("#loadingText").fadeOut(100);
             $("#mainFrameHadith").fadeIn(1000);
-            $("#loadingText").fadeOut(1000);
+            
             for (var x = 0; x < 19; x++) {
-                var content = '<h5> Hadist Nomor ' + response.data.hadiths[x].number + '</h5><a data-aos="zoom-in" data-aos-delay="200" style="background-color:#00adb5;box-shadow:-10px 0px 0px #dddddd;" class="rounded list-group-item text-white list-group-item-action flex-column align-items-start"><div class="d-flex w-100 justify-content-"><h5 class="mb-1">' + response.data.hadiths[x].arab + '</h5></div><p class="mb-1 addReadMore showlesscontent">' + response.data.hadiths[x].id + '</p></a><br><br>';
+                var content = '<h5> Hadist Nomor ' + response.data.hadiths[x].number + '</h5><a data-aos="zoom-in" data-aos-delay="200" style="background-color:#00adb5;box-shadow:-15px 0px 0px #00d9e3;" class="rounded list-group-item text-white list-group-item-action flex-column align-items-start"><div class="d-flex w-100 justify-content-"><h5 class="mb-1">' + response.data.hadiths[x].arab + '</h5></div><p class="mb-1 addReadMore showlesscontent">' + response.data.hadiths[x].id + '</p></a><br><br>';
                 $("#mainContent").append(content);
             }
             $("#hadithTitle").html("Hadist Riwayat " + response.data.name);
