@@ -27,4 +27,6 @@ $('[data-dismiss="modal"]').on('click',
         showCursor:false,
         loop:true
       });
-      
+$("#prayBtn").click(function(){
+    window.location='./daily-pray/index.html';
+})

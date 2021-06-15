@@ -231,3 +231,15 @@ button.btn:hover{
     border-radius: 50px;
     border: 10px double #00adb5;
 }
+@media only screen and (max-width: 600px) {
+    .glass {
+        background-color: #ffffff;
+        margin-top: -300px;
+        padding-top: 20px;
+        z-index: 100;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-radius: 50px;
+        border: 10px double #00adb5;
+    }
+  }
