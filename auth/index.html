@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FP WEB</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        html {
+            background-image: url('../img/bg.jpg');
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="main">
+    <div style="z-index: -1; background-color: #00adb5;height: 400px;"></div>
+    <div class="glass mb-4 text-center" data-aos="fade-in" data-aos-duration="600">
+        <img src="../img/account.png" width="200px" alt="">
+        <h2 class="mt-4">Hai akhi, Selamat datang di aplikasi islami.. login dulu ya!</h2>
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-sm-12">
+                <form>
+                    <div class="form-group mt-4">
+                        <label for="exampleInputEmail1">
+                            <h4>username</h4>
+                        </label>
+                        <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">
+                            <h4>password</h4>
+                        </label>
+                        <input type="password" class="form-control form-control-lg" id="exampleInputPassword1"
+                            placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            <h5 class="mb-4">Ingat Saya</h5>
+                        </label>
+                    </div>
+                    <button onclick="checkLogin()" class="btn btn-primary btn-lg text-white">Login</button>
+                    <a href="../register/index.html"><button type="button" class="btn btn-outline-primary btn-lg">Register</button></a>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./auth.js"></script>
+</body>
+
+</html>
