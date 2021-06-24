@@ -30,3 +30,15 @@ $('[data-dismiss="modal"]').on('click',
 $("#prayBtn").click(function(){
     window.location='./daily-pray/index.html';
 })
+
+$("#CeramahBtn").click(function(){
+    window.location='./extra/index.html';
+})
+
+$("#AsmaulBtn").click(function(){
+    window.location='./asmaul-husna/index.html';
+})
+
+$("#NiatBtn").click(function(){
+    window.location='./niat-sholat/index.html';
+})
