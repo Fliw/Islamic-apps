@@ -5,7 +5,7 @@ function checkIntegrity() {
         if (logged_in == "false") {
             window.location = "./auth/index.html";
         }
-        else if(logged_in == 'true'){
+        else if (logged_in == 'true') {
             return;
         }
         else {

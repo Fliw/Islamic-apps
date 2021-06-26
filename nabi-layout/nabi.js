@@ -1,11 +1,11 @@
 var nabiId = location.search.substring(1);
 AOS.init();
 let tahun = "sebelum masehi";
-$(document).ready(function() {
+$(document).ready(function () {
     $.ajax({
         url: "https://islamic-api-indonesia.herokuapp.com/api/data/kisahnabi?nabi=" + nabiId,
         type: "get",
-        success: function(response) {
+        success: function (response) {
             $("#mainFrameHadith").fadeIn(1000);
             $("#loadingText").fadeOut(1000);
             $("#nabiImg").attr("src", response.result.nabi.image);
@@ -17,17 +17,17 @@ $(document).ready(function() {
             $("#nabiTitle").html("Cerita " + response.result.nabi.nabi);
             page += 20;
         },
-        error: function(response) {
+        error: function (response) {
             alert("Maaf Terjadi Kesalahan!");
         }
     })
 });
 
-$(".btnNext").click(function() {
+$(".btnNext").click(function () {
     window.history.replaceState(null, null, "?" + hadithId + "|" + page);
     location.reload();
 });
-$(".btnPrev").click(function() {
+$(".btnPrev").click(function () {
     if (!$(".btnPrev").hasClass('disabled')) {
         page -= 40;
         console.log(page);
