@@ -4,19 +4,25 @@ $( "#submit" ).click(function(){
     let user = $("#username").val();
     let pass = $("#password").val();
     let verifpass = $("#password2").val();
-    let remember_me = $("#gridCheck").val();
+    if(user == '' ){
+        return swal("Gagal!", "Tolong isi username!", "error");
+    }
+    if(user.length < 6 ){
+        return swal("Gagal!", "Panjang username minimal 6 karakter!", "error");
+    }
+    if(pass == '' || verifpass == ''){
+        return swal("Gagal!", "Tolong isi password!", "error");
+    }
+    if(pass.length < 6 || verifpass.length < 6){
+        return swal("Gagal!", "Panjang Password minimal 6 karakter!", "error");
+    }
     if(verifpass != pass){
-        alert("Password anda tidak sesuai");
+        return swal("Gagal!", "Password tidak sesuai!", "error");
     }
     else{
-        if(remember_me){
-            localStorage.setItem("remember", true);
-        }
+        pass = btoa(pass);
         swal("Berhasil!", "Selamat, akun anda telah terdaftar, silahkan login!", "success");
-    
         localStorage.setItem("user", user);
         localStorage.setItem("pass", pass);
     }
-    
-    
 });
