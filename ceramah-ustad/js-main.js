@@ -26,19 +26,6 @@ $(document).ready(function() {
     })
 });
 
-$(".btnNext").click(function() {
-    window.history.replaceState(null, null, "?" + hadithId + "|" + page);
-    location.reload();
-});
-$(".btnPrev").click(function() {
-    if (!$(".btnPrev").hasClass('disabled')) {
-        page -= 40;
-        console.log(page);
-        window.history.replaceState(null, null, "?" + hadithId + "|" + page);
-        location.reload();
-    }
-});
-
 function check_ustad(nama_ustad){
     let temp = "ustadz";
     if(nama_ustad == "ali%20jaber"){
