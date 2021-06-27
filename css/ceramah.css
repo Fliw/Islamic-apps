@@ -17,8 +17,6 @@ html {
     padding: 3%;
     margin-top: -300px;
     z-index: 100;
-    margin-left: 200px;
-    margin-right: 200px;
     border-radius: 50px;
     border: 10px double #00adb5;
 }
