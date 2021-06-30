@@ -21,56 +21,30 @@ function checkIntegrity() {
     }
 
 }
-if (!window.navigator.onLine) {
-    if (localStorage.getItem("listHadith") != null) {
-        let response = localStorage.getItem("listHadith");
-        for (var x = 0; x < 9; x++) {
-            var button =
-                '<a href="./hadith-layout/index.html?' +
-                response.data[x].id +
-                '|20"<button class="btn btn-lg text-white" style="background-color:#00adb5;">' +
-                response.data[x].name +
-                " Dengan Jumlah hadist " +
-                response.data[x].available +
-                "</button></a><br><br>";
-            $(".hadithModalBody").append(button);
-        }
-    }
-    else{
-        alert("anda sepertinya offline :(");
-    }
-}
-<<<<<<< HEAD
-else {
-    $('[data-target="#hadithModal"]').on("click", function e() {
-        $.ajax({
-            url: "https://api.hadith.sutanlab.id/books/",
-            type: "get",
-            success: function (response) {
-                localStorage.setItem("listHadith", JSON.stringify(response));
-                for (var x = 0; x < 9; x++) {
-                    var button =
-                        '<a href="./hadith-layout/index.html?' +
-                        response.data[x].id +
-                        '|20"<button class="btn btn-lg text-white" style="background-color:#00adb5;">' +
-                        response.data[x].name +
-                        " Dengan Jumlah hadist " +
-                        response.data[x].available +
-                        "</button></a><br><br>";
-                    $(".hadithModalBody").append(button);
-                }
-            },
-            error: function (response) {
-                $("#loadingText").html("Maaf Terjadi Kesalahan!");
-            },
-        });
-=======
-$('[data-target="#hadithModal"]').on("click", function e() {
+// if (!window.navigator.onLine) {
+//     if (localStorage.getItem("listHadith") != null) {
+//         let response = localStorage.getItem("listHadith");
+//         for (var x = 0; x < 9; x++) {
+//             var button =
+//                 '<a href="./hadith-layout/index.html?' +
+//                 response.data[x].id +
+//                 '|20"<button class="btn btn-lg text-white" style="background-color:#00adb5;">' +
+//                 response.data[x].name +
+//                 " Dengan Jumlah hadist " +
+//                 response.data[x].available +
+//                 "</button></a><br><br>";
+//             $(".hadithModalBody").append(button);
+//         }
+//     }
+//     else{
+//         alert("anda sepertinya offline :(");
+//     }
+// }
+$('[data-target="#hadithModal"]').on("click", function () {
     $.ajax({
         url: "https://api.hadith.sutanlab.id/books/",
         type: "get",
         success: function (response) {
-            response = JSON.parse(response);
             for (var x = 0; x < 9; x++) {
                 var button =
                     '<a href="./hadith-layout/index.html?' +
@@ -86,9 +60,8 @@ $('[data-target="#hadithModal"]').on("click", function e() {
         error: function (response) {
             $("#loadingText").html("Maaf Terjadi Kesalahan!");
         },
->>>>>>> 35741ae6ebdb2b4322224801dd77fcf8a482419c
     });
-}
+});
 $('[data-dismiss="modal"]').on("click", function e() {
     console.log("kehapus");
     $(".hadithModalBody").empty();

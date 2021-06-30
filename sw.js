@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-
-const cacheName = 'my-cache';
-const filesToCache = [
-  '/*'
-=======
 const cacheName = 'my-cache';
 const filesToCache = [
   '/fpwebgabut/',
@@ -42,7 +36,6 @@ const filesToCache = [
   '/fpwebgabut/css/pray.css',
   '/fpwebgabut/css/register.css',
   '/fpwebgabut/css/third-party/aos.css',
->>>>>>> 35741ae6ebdb2b4322224801dd77fcf8a482419c
 ];
 self.addEventListener('activate', e => self.clients.claim());
 self.addEventListener('install', e => {

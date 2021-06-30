@@ -9,7 +9,6 @@ if (localStorage.getItem("ceramah") != null) {
         $("#mainFrameHadith").fadeIn(1000);
         $("#loadingText").fadeOut(1000);
         if (kategori == "ustadz") {
-<<<<<<< HEAD
             if(error_data_syekh(response)){
                 ambil_data();
             }else{
@@ -76,45 +75,6 @@ function parsing_nama_penceramah(nama_penceramah){
     }
     console.log(temp);
     return parsing(temp);
-=======
-            $("#Ceramah").html(response.ustad.ceramah);
-            $("#TitleUstad").html("Ceramah " + response.ustad.nama);
-        }
-        else {
-            $("#Ceramah").html(response.syekh.ceramah);
-            $("#TitleUstad").html("Ceramah " + response.syekh.nama);
-        }
-        page += 20;
-        console.log(ustadz);
-    }
-}
-else {
-    $(document).ready(function () {
-        $.ajax({
-
-            url: "https://ceramah-api-zhirrr.vercel.app/api/" + kategori + "/search?q=" + ustadz,
-            type: "get",
-            success: function (response) {
-                localStorage.setItem("ceramah", JSON.stringify(response));
-                $("#mainFrameHadith").fadeIn(1000);
-                $("#loadingText").fadeOut(1000);
-                if (kategori == "ustadz") {
-                    $("#Ceramah").html(response.ustad.ceramah);
-                    $("#TitleUstad").html("Ceramah " + response.ustad.nama);
-                }
-                else {
-                    $("#Ceramah").html(response.syekh.ceramah);
-                    $("#TitleUstad").html("Ceramah " + response.syekh.nama);
-                }
-                page += 20;
-                console.log(ustadz);
-            },
-            error: function (response) {
-                alert("Maaf Terjadi Kesalahan!");
-            }
-        })
-    })
->>>>>>> 35741ae6ebdb2b4322224801dd77fcf8a482419c
 }
 
 function check_ustad(nama_ustad) {
