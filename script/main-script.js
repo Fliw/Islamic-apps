@@ -40,6 +40,7 @@ if (!window.navigator.onLine) {
         alert("anda sepertinya offline :(");
     }
 }
+<<<<<<< HEAD
 else {
     $('[data-target="#hadithModal"]').on("click", function e() {
         $.ajax({
@@ -63,6 +64,29 @@ else {
                 $("#loadingText").html("Maaf Terjadi Kesalahan!");
             },
         });
+=======
+$('[data-target="#hadithModal"]').on("click", function e() {
+    $.ajax({
+        url: "https://api.hadith.sutanlab.id/books/",
+        type: "get",
+        success: function (response) {
+            response = JSON.parse(response);
+            for (var x = 0; x < 9; x++) {
+                var button =
+                    '<a href="./hadith-layout/index.html?' +
+                    response.data[x].id +
+                    '|20"<button class="btn btn-lg text-white" style="background-color:#00adb5;">' +
+                    response.data[x].name +
+                    " Dengan Jumlah hadist " +
+                    response.data[x].available +
+                    "</button></a><br><br>";
+                $(".hadithModalBody").append(button);
+            }
+        },
+        error: function (response) {
+            $("#loadingText").html("Maaf Terjadi Kesalahan!");
+        },
+>>>>>>> 35741ae6ebdb2b4322224801dd77fcf8a482419c
     });
 }
 $('[data-dismiss="modal"]').on("click", function e() {

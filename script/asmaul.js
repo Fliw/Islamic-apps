@@ -3,6 +3,10 @@ AOS.init();
 $(document).ready(function () {
     if (localStorage.getItem("asmaul") != null) {
         let result = JSON.parse(localStorage.getItem("asmaul"));
+<<<<<<< HEAD
+=======
+        console.log("loaded from local");
+>>>>>>> 35741ae6ebdb2b4322224801dd77fcf8a482419c
         $("#loadingText").fadeOut();
         for (var x = 0; x < 99; x++) {
             var original = '<div class="glass col-sm-12 col-md-3 pb-4 mb-4 " data-aos="fade-up" data-aos-delay="200">';
