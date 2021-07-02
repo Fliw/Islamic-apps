@@ -45,6 +45,7 @@ $('[data-target="#hadithModal"]').on("click", function () {
         url: "https://api.hadith.sutanlab.id/books/",
         type: "get",
         success: function (response) {
+            alert(response);
             for (var x = 0; x < 9; x++) {
                 var button =
                     '<a href="./hadith-layout/index.html?' +
